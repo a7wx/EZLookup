@@ -1,0 +1,49 @@
+{
+  "manifest_version": 2,
+  "name": "EZLookup",
+  "version": "0.1.0",
+  "commands": {
+      "invest-tab": {
+          "suggested_key": {
+              "default": "Alt+I",
+              "mac": "Alt+I"
+          },
+          "description": "Opens Investopedia"
+      },
+      "wso-tab": {
+          "suggested_key": {
+              "default": "Alt+W",
+              "mac": "Alt+W"
+          },
+          "description": "Opens WSO"
+      },
+      "cfi-tab": {
+          "suggested_key": {
+              "default": "Alt+C",
+              "mac": "Alt+C"
+          },
+          "description": "Opens CFI"
+      }
+  },
+  "background": {
+      "scripts": [
+          "background.js"
+      ],
+      "persistent": true
+  },
+  "permissions": [
+      "activeTab",
+      "tabs",
+      "<all_urls>"
+  ],
+  "browser_action": {
+    "default_title": "Popout HTML",
+    "default_popup": "popout.html"
+  },
+  "icons": {
+    "16": "logo16.png",
+    "32": "logo32.png",
+    "48": "logo48.png",
+    "128": "logo128.png"
+  }
+}
